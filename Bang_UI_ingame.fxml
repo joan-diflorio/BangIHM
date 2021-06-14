@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="644.0" prefWidth="1031.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <MenuBar prefHeight="27.0" prefWidth="762.0" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Nouvelle partie" />
+            <MenuItem mnemonicParsing="false" text="Ouvrir une partie sauvegardée" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Arrêter la partie" />
+            <MenuItem mnemonicParsing="false" text="Sauvegarder la partie" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Options…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quitter" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <SplitPane dividerPositions="0.7211796246648794" layoutY="153.0" orientation="VERTICAL" prefHeight="375.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <SplitPane dividerPositions="0.6806231742940604" layoutX="403.0" layoutY="107.0" prefHeight="441.0" prefWidth="1029.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="114.0" layoutX="316.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="114.0" layoutX="477.0" layoutY="35.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="114.0" layoutX="524.0" layoutY="197.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="114.0" layoutX="423.0" layoutY="303.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="114.0" layoutX="204.0" layoutY="303.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="114.0" layoutX="99.0" layoutY="163.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="114.0" layoutX="180.0" layoutY="35.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                                    <Text layoutX="325.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="personnage" />
+                                    <Text layoutX="486.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="personnage" />
+                                    <Text layoutX="533.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="personnage" />
+                                    <Text layoutX="432.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="personnage" />
+                                    <Text layoutX="213.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="personnage" />
+                                    <Text layoutX="108.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="personnage" />
+                                    <Text layoutX="189.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="personnage" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1ff9" height="132.0" layoutX="287.0" layoutY="154.0" stroke="BLACK" strokeType="INSIDE" width="138.0" />
+                                    <Text layoutX="333.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Défausse" />
+                                    <ImageView blendMode="MULTIPLY" fitHeight="57.0" fitWidth="63.0" layoutX="325.0" layoutY="14.0">
+                                       <image>
+                                          <Image url="@../Downloads/58a79dc55ad0fd0b7fdd338a.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="404.0" layoutY="99.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="418.0" layoutY="99.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="432.0" layoutY="99.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="446.0" layoutY="99.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="457.0" layoutY="99.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="565.0" layoutY="116.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="579.0" layoutY="116.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="589.0" layoutY="116.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="598.0" layoutY="116.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="612.0" layoutY="116.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="612.0" layoutY="282.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="626.0" layoutY="282.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="640.0" layoutY="282.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="654.0" layoutY="282.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="668.0" layoutY="282.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="510.0" layoutY="378.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="526.0" layoutY="378.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="542.0" layoutY="378.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="557.0" layoutY="378.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="572.0" layoutY="378.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="287.0" layoutY="378.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="301.0" layoutY="378.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="309.0" layoutY="378.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="326.0" layoutY="378.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="341.0" layoutY="378.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="79.0" layoutY="254.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="65.0" layoutY="254.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="51.0" layoutY="254.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="37.0" layoutY="254.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="23.0" layoutY="254.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="164.0" layoutY="116.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="150.0" layoutY="116.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="133.0" layoutY="116.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="119.0" layoutY="116.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90421e" height="25.0" layoutX="112.0" layoutY="116.0" stroke="BLACK" strokeType="INSIDE" width="14.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="107.0" layoutX="768.0" layoutY="442.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                                    <ImageView blendMode="MULTIPLY" fitHeight="447.0" fitWidth="703.0" layoutX="-1.0" layoutY="-4.0">
+                                       <image>
+                                          <Image url="@../Downloads/zsgsfs.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <children>
+                                    <Text layoutX="143.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Actions" />
+                                    <TextArea layoutX="8.0" layoutY="36.0" prefHeight="257.0" prefWidth="311.0" text="Vous pouvez attaquer : &quot;nom des personnages&quot;." />
+                                    <Text layoutX="147.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Morts" />
+                                    <TextArea layoutX="8.0" layoutY="327.0" prefHeight="98.0" prefWidth="311.0" text="&quot;Nom des personnages&quot; sont morts." />
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="49.0" prefWidth="638.0">
+                     <children>
+                        <SplitPane dividerPositions="0.08568646543330087" layoutX="-14.0" layoutY="8.0" prefHeight="85.0" prefWidth="638.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="-14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="8.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <children>
+                                    <Text layoutX="33.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Main du joueur" wrappingWidth="47.13671875" />
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa21f" height="78.0" layoutX="24.0" layoutY="26.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                                    <Text layoutX="33.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carte" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa21f" height="78.0" layoutX="93.0" layoutY="26.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                                    <Text layoutX="106.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carte" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa21f" height="78.0" layoutX="163.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                                    <Text layoutX="174.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carte" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa21f" height="78.0" layoutX="236.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                                    <Text layoutX="244.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carte" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa21f" height="78.0" layoutX="302.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa21f" height="78.0" layoutX="374.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa21f" height="78.0" layoutX="456.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa21f" height="78.0" layoutX="531.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                                    <Text layoutX="313.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carte" />
+                                    <Text layoutX="385.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carte" />
+                                    <Text layoutX="467.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carte" />
+                                    <Text layoutX="542.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carte" />
+                                    <SplitPane layoutX="750.0" layoutY="-5.0" prefHeight="160.0" prefWidth="200.0">
+                                       <items>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rôle du joueur" />
+                                       </items>
+                                    </SplitPane>
+                                    <Button layoutX="681.0" layoutY="110.0" mnemonicParsing="false" text="Passer" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1fff61" height="84.0" layoutX="672.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
+                                    <Text layoutX="695.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pile" />
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+    </AnchorPane>
+  </children>
+   <effect>
+      <Blend />
+   </effect>
+</VBox>
